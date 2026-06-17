@@ -1,0 +1,829 @@
+2026-04-30 13:28:56,469 - INFO - ----- PIPELINE STARTED -----
+2026-04-30 13:28:56,696 - INFO - Database connection established successfully.
+2026-04-30 13:28:56,697 - INFO - Executing vendor summary query...
+2026-04-30 13:29:54,464 - INFO - Query executed successfully. Rows fetched: 10692
+2026-04-30 13:29:54,476 - INFO - Sample Data:
+   VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  
+0         1033056.96     68601.68  
+1          796658.12    144929.24  
+2          878099.03    123780.22  
+3         1244082.37    257032.07  
+4          915561.50    257032.07  
+2026-04-30 13:29:54,478 - INFO - Starting data cleaning...
+2026-04-30 13:29:54,496 - INFO - Data cleaning completed successfully.
+2026-04-30 13:29:54,503 - INFO - Cleaned Data Sample:
+   VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  GrossProfit  ProfitMargin  StockTurnover  \
+0         1033056.96     68601.68  -2778194.64   -268.929473       0.197849   
+1          796658.12    144929.24  -3007383.10   -377.499836       0.160865   
+2          878099.03    123780.22  -2540204.65   -289.284530       0.185676   
+3         1244082.37    257032.07  -2017115.57   -162.136818       0.276986   
+4          915561.50    257032.07  -2107644.51   -230.202396       0.216134   
+
+   SalesToPurchaseRatio  
+0              0.271055  
+1              0.209424  
+2              0.256882  
+3              0.381480  
+4              0.302845  
+2026-04-30 13:30:00,314 - INFO - vendor_sales_summary uploaded successfully
+2026-04-30 13:30:00,315 - INFO - Data successfully ingested into MySQL table.
+2026-04-30 13:30:00,316 - INFO - Database connection closed.
+2026-04-30 13:30:00,316 - INFO - ----- PIPELINE COMPLETED SUCCESSFULLY -----
+2026-04-30 13:32:04,020 - INFO - ----- PIPELINE STARTED -----
+2026-04-30 13:32:04,206 - INFO - Database connection established successfully.
+2026-04-30 13:32:04,206 - INFO - Executing vendor summary query...
+2026-04-30 13:32:59,843 - INFO - Query executed successfully. Rows fetched: 10692
+2026-04-30 13:32:59,853 - INFO - Sample Data:
+   VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  
+0         1033056.96     68601.68  
+1          796658.12    144929.24  
+2          878099.03    123780.22  
+3         1244082.37    257032.07  
+4          915561.50    257032.07  
+2026-04-30 13:32:59,853 - INFO - Starting data cleaning...
+2026-04-30 13:32:59,872 - INFO - Data cleaning completed successfully.
+2026-04-30 13:32:59,881 - INFO - Cleaned Data Sample:
+   VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  GrossProfit  ProfitMargin  StockTurnover  \
+0         1033056.96     68601.68  -2778194.64   -268.929473       0.197849   
+1          796658.12    144929.24  -3007383.10   -377.499836       0.160865   
+2          878099.03    123780.22  -2540204.65   -289.284530       0.185676   
+3         1244082.37    257032.07  -2017115.57   -162.136818       0.276986   
+4          915561.50    257032.07  -2107644.51   -230.202396       0.216134   
+
+   SalesToPurchaseRatio  
+0              0.271055  
+1              0.209424  
+2              0.256882  
+3              0.381480  
+4              0.302845  
+2026-04-30 13:33:05,879 - INFO - vendor_sales_summary uploaded successfully
+2026-04-30 13:33:05,879 - INFO - Data successfully ingested into MySQL table.
+2026-04-30 13:33:05,880 - INFO - Database connection closed.
+2026-04-30 13:33:05,880 - INFO - ----- PIPELINE COMPLETED SUCCESSFULLY -----
+2026-04-30 13:34:13,864 - INFO - ----- PIPELINE STARTED -----
+2026-04-30 13:34:13,911 - INFO - Database connection established successfully.
+2026-04-30 13:34:13,911 - INFO - Executing vendor summary query...
+2026-04-30 13:35:11,208 - INFO - Query executed successfully. Rows fetched: 10692
+2026-04-30 13:35:11,215 - INFO - Sample Data:
+   VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  
+0         1033056.96     68601.68  
+1          796658.12    144929.24  
+2          878099.03    123780.22  
+3         1244082.37    257032.07  
+4          915561.50    257032.07  
+2026-04-30 13:35:11,216 - INFO - Starting data cleaning...
+2026-04-30 13:35:11,239 - INFO - Data cleaning completed successfully.
+2026-04-30 13:35:11,248 - INFO - Cleaned Data Sample:
+   VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  GrossProfit  ProfitMargin  StockTurnover  \
+0         1033056.96     68601.68  -2778194.64   -268.929473       0.197849   
+1          796658.12    144929.24  -3007383.10   -377.499836       0.160865   
+2          878099.03    123780.22  -2540204.65   -289.284530       0.185676   
+3         1244082.37    257032.07  -2017115.57   -162.136818       0.276986   
+4          915561.50    257032.07  -2107644.51   -230.202396       0.216134   
+
+   SalesToPurchaseRatio  
+0              0.271055  
+1              0.209424  
+2              0.256882  
+3              0.381480  
+4              0.302845  
+2026-04-30 13:35:16,898 - INFO - vendor_sales_summary uploaded successfully
+2026-04-30 13:35:16,898 - INFO - Data successfully ingested into MySQL table.
+2026-04-30 13:35:16,899 - INFO - Database connection closed.
+2026-04-30 13:35:16,899 - INFO - ----- PIPELINE COMPLETED SUCCESSFULLY -----
+2026-05-02 15:11:56,426 - INFO - ----- PIPELINE STARTED -----
+2026-05-02 15:11:56,754 - INFO - Database connection established successfully.
+2026-05-02 15:11:56,754 - INFO - Executing vendor summary query...
+2026-05-02 15:12:48,814 - INFO - Query executed successfully. Rows fetched: 10692
+2026-05-02 15:12:48,826 - INFO - Sample Data:
+   VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  
+0         1033056.96     68601.68  
+1          796658.12    144929.24  
+2          878099.03    123780.22  
+3         1244082.37    257032.07  
+4          915561.50    257032.07  
+2026-05-02 15:12:48,826 - INFO - Starting data cleaning...
+2026-05-02 15:12:48,844 - INFO - Data cleaning completed successfully.
+2026-05-02 15:12:48,851 - INFO - Cleaned Data Sample:
+   VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  GrossProfit  ProfitMargin  StockTurnover  \
+0         1033056.96     68601.68  -2778194.64   -268.929473       0.197849   
+1          796658.12    144929.24  -3007383.10   -377.499836       0.160865   
+2          878099.03    123780.22  -2540204.65   -289.284530       0.185676   
+3         1244082.37    257032.07  -2017115.57   -162.136818       0.276986   
+4          915561.50    257032.07  -2107644.51   -230.202396       0.216134   
+
+   SalesToPurchaseRatio  
+0              0.271055  
+1              0.209424  
+2              0.256882  
+3              0.381480  
+4              0.302845  
+2026-05-02 15:12:53,892 - INFO - vendor_sales_summary uploaded successfully
+2026-05-02 15:12:53,892 - INFO - Data successfully ingested into MySQL table.
+2026-05-02 15:12:53,893 - INFO - Database connection closed.
+2026-05-02 15:12:53,893 - INFO - ----- PIPELINE COMPLETED SUCCESSFULLY -----
+2026-05-02 15:20:54,103 - INFO - ----- PIPELINE STARTED -----
+2026-05-02 15:20:54,432 - INFO - Database connection established successfully.
+2026-05-02 15:20:54,432 - INFO - Executing vendor summary query...
+2026-05-02 15:21:48,195 - INFO - Query executed successfully. Rows fetched: 10692
+2026-05-02 15:21:48,211 - INFO - Sample Data:
+   VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  
+0         1033056.96     68601.68  
+1          796658.12    144929.24  
+2          878099.03    123780.22  
+3         1244082.37    257032.07  
+4          915561.50    257032.07  
+2026-05-02 15:21:48,211 - INFO - Starting data cleaning...
+2026-05-02 15:21:48,229 - INFO - Data cleaning completed successfully.
+2026-05-02 15:21:48,237 - INFO - Cleaned Data Sample:
+   VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  GrossProfit  ProfitMargin  StockTurnover  \
+0         1033056.96     68601.68  -2778194.64   -268.929473       0.197849   
+1          796658.12    144929.24  -3007383.10   -377.499836       0.160865   
+2          878099.03    123780.22  -2540204.65   -289.284530       0.185676   
+3         1244082.37    257032.07  -2017115.57   -162.136818       0.276986   
+4          915561.50    257032.07  -2107644.51   -230.202396       0.216134   
+
+   SalesToPurchaseRatio  
+0              0.271055  
+1              0.209424  
+2              0.256882  
+3              0.381480  
+4              0.302845  
+2026-05-02 15:21:53,251 - INFO - vendor_sales_summary uploaded successfully
+2026-05-02 15:21:53,251 - INFO - Data successfully ingested into MySQL table.
+2026-05-02 15:21:53,252 - INFO - Database connection closed.
+2026-05-02 15:21:53,252 - INFO - ----- PIPELINE COMPLETED SUCCESSFULLY -----
+2026-05-02 15:31:33,349 - INFO - ----- PIPELINE STARTED -----
+2026-05-02 15:31:33,398 - INFO - Database connection established successfully.
+2026-05-02 15:31:33,418 - ERROR - Error executing query: Execution failed on sql '
+        SELECT 
+            ps.VendorNumber, 
+            ps.VendorName, 
+            ps.Brand, 
+            ps.Description,
+            ps.PurchasePrice,
+            ps.ActualPrice,
+            ps.Volume,
+            ps.TotalPurchaseQuantity, 
+            ps.TotalPurchaseDollars, 
+            IFNULL(ss.TotalSalesQuantity, 0) AS TotalSalesQuantity,
+            IFNULL(ss.TotalSalesPrice, 0) AS TotalSalesPrice,
+            IFNULL(ss.TotalSalesDollars, 0) AS TotalSalesDollars,
+            IFNULL(ss.TotalExciseTax, 0) AS TotalExciseTax,
+            IFNULL(fs.FreightCost, 0) AS FreightCost
+        FROM (
+            SELECT 
+                p.VendorNumber, 
+                p.VendorName, 
+                p.Brand, 
+                p.Description,
+                p.PurchasePrice,
+                (p.PurchasePrice * 1.4) AS ActualPrice, -- Placeholder if ActualPrice is calculated
+                p.Volume,
+                SUM(p.Quantity) AS TotalPurchaseQuantity, 
+                SUM(p.Quantity * p.PurchasePrice) AS TotalPurchaseDollars
+            FROM purchases p
+            WHERE p.PurchasePrice > 0
+            GROUP BY p.VendorNumber, p.VendorName, p.Brand, p.Description, p.PurchasePrice, p.Volume
+        ) ps
+        LEFT JOIN (
+            SELECT 
+                VendorNo, 
+                Brand, 
+                SUM(SalesQuantity) AS TotalSalesQuantity,
+                SUM(SalesPrice) AS TotalSalesPrice,
+                SUM(SalesDollars) AS TotalSalesDollars,
+                SUM(ExciseTax) AS TotalExciseTax
+            FROM sales
+            GROUP BY VendorNo, Brand
+        ) ss ON ps.VendorNumber = ss.VendorNo AND ps.Brand = ss.Brand
+        LEFT JOIN (
+            SELECT 
+                VendorNumber, 
+                SUM(Freight) AS FreightCost
+            FROM vendor_invoice
+            GROUP BY VendorNumber
+        ) fs ON ps.VendorNumber = fs.VendorNumber
+        ORDER BY ps.TotalPurchaseDollars DESC;
+        ': (pymysql.err.OperationalError) (1054, "Unknown column 'p.Volume' in 'field list'")
+[SQL: 
+        SELECT 
+            ps.VendorNumber, 
+            ps.VendorName, 
+            ps.Brand, 
+            ps.Description,
+            ps.PurchasePrice,
+            ps.ActualPrice,
+            ps.Volume,
+            ps.TotalPurchaseQuantity, 
+            ps.TotalPurchaseDollars, 
+            IFNULL(ss.TotalSalesQuantity, 0) AS TotalSalesQuantity,
+            IFNULL(ss.TotalSalesPrice, 0) AS TotalSalesPrice,
+            IFNULL(ss.TotalSalesDollars, 0) AS TotalSalesDollars,
+            IFNULL(ss.TotalExciseTax, 0) AS TotalExciseTax,
+            IFNULL(fs.FreightCost, 0) AS FreightCost
+        FROM (
+            SELECT 
+                p.VendorNumber, 
+                p.VendorName, 
+                p.Brand, 
+                p.Description,
+                p.PurchasePrice,
+                (p.PurchasePrice * 1.4) AS ActualPrice, -- Placeholder if ActualPrice is calculated
+                p.Volume,
+                SUM(p.Quantity) AS TotalPurchaseQuantity, 
+                SUM(p.Quantity * p.PurchasePrice) AS TotalPurchaseDollars
+            FROM purchases p
+            WHERE p.PurchasePrice > 0
+            GROUP BY p.VendorNumber, p.VendorName, p.Brand, p.Description, p.PurchasePrice, p.Volume
+        ) ps
+        LEFT JOIN (
+            SELECT 
+                VendorNo, 
+                Brand, 
+                SUM(SalesQuantity) AS TotalSalesQuantity,
+                SUM(SalesPrice) AS TotalSalesPrice,
+                SUM(SalesDollars) AS TotalSalesDollars,
+                SUM(ExciseTax) AS TotalExciseTax
+            FROM sales
+            GROUP BY VendorNo, Brand
+        ) ss ON ps.VendorNumber = ss.VendorNo AND ps.Brand = ss.Brand
+        LEFT JOIN (
+            SELECT 
+                VendorNumber, 
+                SUM(Freight) AS FreightCost
+            FROM vendor_invoice
+            GROUP BY VendorNumber
+        ) fs ON ps.VendorNumber = fs.VendorNumber
+        ORDER BY ps.TotalPurchaseDollars DESC;
+        ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-02 15:31:33,419 - ERROR - Pipeline failed: Execution failed on sql '
+        SELECT 
+            ps.VendorNumber, 
+            ps.VendorName, 
+            ps.Brand, 
+            ps.Description,
+            ps.PurchasePrice,
+            ps.ActualPrice,
+            ps.Volume,
+            ps.TotalPurchaseQuantity, 
+            ps.TotalPurchaseDollars, 
+            IFNULL(ss.TotalSalesQuantity, 0) AS TotalSalesQuantity,
+            IFNULL(ss.TotalSalesPrice, 0) AS TotalSalesPrice,
+            IFNULL(ss.TotalSalesDollars, 0) AS TotalSalesDollars,
+            IFNULL(ss.TotalExciseTax, 0) AS TotalExciseTax,
+            IFNULL(fs.FreightCost, 0) AS FreightCost
+        FROM (
+            SELECT 
+                p.VendorNumber, 
+                p.VendorName, 
+                p.Brand, 
+                p.Description,
+                p.PurchasePrice,
+                (p.PurchasePrice * 1.4) AS ActualPrice, -- Placeholder if ActualPrice is calculated
+                p.Volume,
+                SUM(p.Quantity) AS TotalPurchaseQuantity, 
+                SUM(p.Quantity * p.PurchasePrice) AS TotalPurchaseDollars
+            FROM purchases p
+            WHERE p.PurchasePrice > 0
+            GROUP BY p.VendorNumber, p.VendorName, p.Brand, p.Description, p.PurchasePrice, p.Volume
+        ) ps
+        LEFT JOIN (
+            SELECT 
+                VendorNo, 
+                Brand, 
+                SUM(SalesQuantity) AS TotalSalesQuantity,
+                SUM(SalesPrice) AS TotalSalesPrice,
+                SUM(SalesDollars) AS TotalSalesDollars,
+                SUM(ExciseTax) AS TotalExciseTax
+            FROM sales
+            GROUP BY VendorNo, Brand
+        ) ss ON ps.VendorNumber = ss.VendorNo AND ps.Brand = ss.Brand
+        LEFT JOIN (
+            SELECT 
+                VendorNumber, 
+                SUM(Freight) AS FreightCost
+            FROM vendor_invoice
+            GROUP BY VendorNumber
+        ) fs ON ps.VendorNumber = fs.VendorNumber
+        ORDER BY ps.TotalPurchaseDollars DESC;
+        ': (pymysql.err.OperationalError) (1054, "Unknown column 'p.Volume' in 'field list'")
+[SQL: 
+        SELECT 
+            ps.VendorNumber, 
+            ps.VendorName, 
+            ps.Brand, 
+            ps.Description,
+            ps.PurchasePrice,
+            ps.ActualPrice,
+            ps.Volume,
+            ps.TotalPurchaseQuantity, 
+            ps.TotalPurchaseDollars, 
+            IFNULL(ss.TotalSalesQuantity, 0) AS TotalSalesQuantity,
+            IFNULL(ss.TotalSalesPrice, 0) AS TotalSalesPrice,
+            IFNULL(ss.TotalSalesDollars, 0) AS TotalSalesDollars,
+            IFNULL(ss.TotalExciseTax, 0) AS TotalExciseTax,
+            IFNULL(fs.FreightCost, 0) AS FreightCost
+        FROM (
+            SELECT 
+                p.VendorNumber, 
+                p.VendorName, 
+                p.Brand, 
+                p.Description,
+                p.PurchasePrice,
+                (p.PurchasePrice * 1.4) AS ActualPrice, -- Placeholder if ActualPrice is calculated
+                p.Volume,
+                SUM(p.Quantity) AS TotalPurchaseQuantity, 
+                SUM(p.Quantity * p.PurchasePrice) AS TotalPurchaseDollars
+            FROM purchases p
+            WHERE p.PurchasePrice > 0
+            GROUP BY p.VendorNumber, p.VendorName, p.Brand, p.Description, p.PurchasePrice, p.Volume
+        ) ps
+        LEFT JOIN (
+            SELECT 
+                VendorNo, 
+                Brand, 
+                SUM(SalesQuantity) AS TotalSalesQuantity,
+                SUM(SalesPrice) AS TotalSalesPrice,
+                SUM(SalesDollars) AS TotalSalesDollars,
+                SUM(ExciseTax) AS TotalExciseTax
+            FROM sales
+            GROUP BY VendorNo, Brand
+        ) ss ON ps.VendorNumber = ss.VendorNo AND ps.Brand = ss.Brand
+        LEFT JOIN (
+            SELECT 
+                VendorNumber, 
+                SUM(Freight) AS FreightCost
+            FROM vendor_invoice
+            GROUP BY VendorNumber
+        ) fs ON ps.VendorNumber = fs.VendorNumber
+        ORDER BY ps.TotalPurchaseDollars DESC;
+        ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-02 15:32:10,495 - INFO - ----- PIPELINE STARTED -----
+2026-05-02 15:32:10,540 - INFO - Database connection established successfully.
+2026-05-02 15:32:10,561 - ERROR - Error executing query: Execution failed on sql '
+        SELECT 
+            ps.VendorNumber, 
+            ps.VendorName, 
+            ps.Brand, 
+            ps.Description,
+            ps.PurchasePrice,
+            ps.ActualPrice,
+            ps.Volume,
+            ps.TotalPurchaseQuantity, 
+            ps.TotalPurchaseDollars, 
+            IFNULL(ss.TotalSalesQuantity, 0) AS TotalSalesQuantity,
+            IFNULL(ss.TotalSalesPrice, 0) AS TotalSalesPrice,
+            IFNULL(ss.TotalSalesDollars, 0) AS TotalSalesDollars,
+            IFNULL(ss.TotalExciseTax, 0) AS TotalExciseTax,
+            IFNULL(fs.FreightCost, 0) AS FreightCost
+        FROM (
+            SELECT 
+                p.VendorNumber, 
+                p.VendorName, 
+                p.Brand, 
+                p.Description,
+                p.PurchasePrice,
+                (p.PurchasePrice * 1.4) AS ActualPrice, -- Placeholder if ActualPrice is calculated
+                p.Volume,
+                SUM(p.Quantity) AS TotalPurchaseQuantity, 
+                SUM(p.Quantity * p.PurchasePrice) AS TotalPurchaseDollars
+            FROM purchases p
+            WHERE p.PurchasePrice > 0
+            GROUP BY p.VendorNumber, p.VendorName, p.Brand, p.Description, p.PurchasePrice, p.Volume
+        ) ps
+        LEFT JOIN (
+            SELECT 
+                VendorNo, 
+                Brand, 
+                SUM(SalesQuantity) AS TotalSalesQuantity,
+                SUM(SalesPrice) AS TotalSalesPrice,
+                SUM(SalesDollars) AS TotalSalesDollars,
+                SUM(ExciseTax) AS TotalExciseTax
+            FROM sales
+            GROUP BY VendorNo, Brand
+        ) ss ON ps.VendorNumber = ss.VendorNo AND ps.Brand = ss.Brand
+        LEFT JOIN (
+            SELECT 
+                VendorNumber, 
+                SUM(Freight) AS FreightCost
+            FROM vendor_invoice
+            GROUP BY VendorNumber
+        ) fs ON ps.VendorNumber = fs.VendorNumber
+        ORDER BY ps.TotalPurchaseDollars DESC;
+        ': (pymysql.err.OperationalError) (1054, "Unknown column 'p.Volume' in 'field list'")
+[SQL: 
+        SELECT 
+            ps.VendorNumber, 
+            ps.VendorName, 
+            ps.Brand, 
+            ps.Description,
+            ps.PurchasePrice,
+            ps.ActualPrice,
+            ps.Volume,
+            ps.TotalPurchaseQuantity, 
+            ps.TotalPurchaseDollars, 
+            IFNULL(ss.TotalSalesQuantity, 0) AS TotalSalesQuantity,
+            IFNULL(ss.TotalSalesPrice, 0) AS TotalSalesPrice,
+            IFNULL(ss.TotalSalesDollars, 0) AS TotalSalesDollars,
+            IFNULL(ss.TotalExciseTax, 0) AS TotalExciseTax,
+            IFNULL(fs.FreightCost, 0) AS FreightCost
+        FROM (
+            SELECT 
+                p.VendorNumber, 
+                p.VendorName, 
+                p.Brand, 
+                p.Description,
+                p.PurchasePrice,
+                (p.PurchasePrice * 1.4) AS ActualPrice, -- Placeholder if ActualPrice is calculated
+                p.Volume,
+                SUM(p.Quantity) AS TotalPurchaseQuantity, 
+                SUM(p.Quantity * p.PurchasePrice) AS TotalPurchaseDollars
+            FROM purchases p
+            WHERE p.PurchasePrice > 0
+            GROUP BY p.VendorNumber, p.VendorName, p.Brand, p.Description, p.PurchasePrice, p.Volume
+        ) ps
+        LEFT JOIN (
+            SELECT 
+                VendorNo, 
+                Brand, 
+                SUM(SalesQuantity) AS TotalSalesQuantity,
+                SUM(SalesPrice) AS TotalSalesPrice,
+                SUM(SalesDollars) AS TotalSalesDollars,
+                SUM(ExciseTax) AS TotalExciseTax
+            FROM sales
+            GROUP BY VendorNo, Brand
+        ) ss ON ps.VendorNumber = ss.VendorNo AND ps.Brand = ss.Brand
+        LEFT JOIN (
+            SELECT 
+                VendorNumber, 
+                SUM(Freight) AS FreightCost
+            FROM vendor_invoice
+            GROUP BY VendorNumber
+        ) fs ON ps.VendorNumber = fs.VendorNumber
+        ORDER BY ps.TotalPurchaseDollars DESC;
+        ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-02 15:32:10,562 - ERROR - Pipeline failed: Execution failed on sql '
+        SELECT 
+            ps.VendorNumber, 
+            ps.VendorName, 
+            ps.Brand, 
+            ps.Description,
+            ps.PurchasePrice,
+            ps.ActualPrice,
+            ps.Volume,
+            ps.TotalPurchaseQuantity, 
+            ps.TotalPurchaseDollars, 
+            IFNULL(ss.TotalSalesQuantity, 0) AS TotalSalesQuantity,
+            IFNULL(ss.TotalSalesPrice, 0) AS TotalSalesPrice,
+            IFNULL(ss.TotalSalesDollars, 0) AS TotalSalesDollars,
+            IFNULL(ss.TotalExciseTax, 0) AS TotalExciseTax,
+            IFNULL(fs.FreightCost, 0) AS FreightCost
+        FROM (
+            SELECT 
+                p.VendorNumber, 
+                p.VendorName, 
+                p.Brand, 
+                p.Description,
+                p.PurchasePrice,
+                (p.PurchasePrice * 1.4) AS ActualPrice, -- Placeholder if ActualPrice is calculated
+                p.Volume,
+                SUM(p.Quantity) AS TotalPurchaseQuantity, 
+                SUM(p.Quantity * p.PurchasePrice) AS TotalPurchaseDollars
+            FROM purchases p
+            WHERE p.PurchasePrice > 0
+            GROUP BY p.VendorNumber, p.VendorName, p.Brand, p.Description, p.PurchasePrice, p.Volume
+        ) ps
+        LEFT JOIN (
+            SELECT 
+                VendorNo, 
+                Brand, 
+                SUM(SalesQuantity) AS TotalSalesQuantity,
+                SUM(SalesPrice) AS TotalSalesPrice,
+                SUM(SalesDollars) AS TotalSalesDollars,
+                SUM(ExciseTax) AS TotalExciseTax
+            FROM sales
+            GROUP BY VendorNo, Brand
+        ) ss ON ps.VendorNumber = ss.VendorNo AND ps.Brand = ss.Brand
+        LEFT JOIN (
+            SELECT 
+                VendorNumber, 
+                SUM(Freight) AS FreightCost
+            FROM vendor_invoice
+            GROUP BY VendorNumber
+        ) fs ON ps.VendorNumber = fs.VendorNumber
+        ORDER BY ps.TotalPurchaseDollars DESC;
+        ': (pymysql.err.OperationalError) (1054, "Unknown column 'p.Volume' in 'field list'")
+[SQL: 
+        SELECT 
+            ps.VendorNumber, 
+            ps.VendorName, 
+            ps.Brand, 
+            ps.Description,
+            ps.PurchasePrice,
+            ps.ActualPrice,
+            ps.Volume,
+            ps.TotalPurchaseQuantity, 
+            ps.TotalPurchaseDollars, 
+            IFNULL(ss.TotalSalesQuantity, 0) AS TotalSalesQuantity,
+            IFNULL(ss.TotalSalesPrice, 0) AS TotalSalesPrice,
+            IFNULL(ss.TotalSalesDollars, 0) AS TotalSalesDollars,
+            IFNULL(ss.TotalExciseTax, 0) AS TotalExciseTax,
+            IFNULL(fs.FreightCost, 0) AS FreightCost
+        FROM (
+            SELECT 
+                p.VendorNumber, 
+                p.VendorName, 
+                p.Brand, 
+                p.Description,
+                p.PurchasePrice,
+                (p.PurchasePrice * 1.4) AS ActualPrice, -- Placeholder if ActualPrice is calculated
+                p.Volume,
+                SUM(p.Quantity) AS TotalPurchaseQuantity, 
+                SUM(p.Quantity * p.PurchasePrice) AS TotalPurchaseDollars
+            FROM purchases p
+            WHERE p.PurchasePrice > 0
+            GROUP BY p.VendorNumber, p.VendorName, p.Brand, p.Description, p.PurchasePrice, p.Volume
+        ) ps
+        LEFT JOIN (
+            SELECT 
+                VendorNo, 
+                Brand, 
+                SUM(SalesQuantity) AS TotalSalesQuantity,
+                SUM(SalesPrice) AS TotalSalesPrice,
+                SUM(SalesDollars) AS TotalSalesDollars,
+                SUM(ExciseTax) AS TotalExciseTax
+            FROM sales
+            GROUP BY VendorNo, Brand
+        ) ss ON ps.VendorNumber = ss.VendorNo AND ps.Brand = ss.Brand
+        LEFT JOIN (
+            SELECT 
+                VendorNumber, 
+                SUM(Freight) AS FreightCost
+            FROM vendor_invoice
+            GROUP BY VendorNumber
+        ) fs ON ps.VendorNumber = fs.VendorNumber
+        ORDER BY ps.TotalPurchaseDollars DESC;
+        ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-02 15:32:40,040 - INFO - ----- PIPELINE STARTED -----
+2026-05-02 15:32:40,082 - INFO - Database connection established successfully.
+2026-05-02 15:32:40,083 - INFO - Executing vendor summary query...
+2026-05-02 15:33:40,637 - INFO - Query executed successfully. Rows fetched: 10692
+2026-05-02 15:33:40,643 - INFO - Sample Data:
+   VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  
+0         1033056.96     68601.68  
+1          796658.12    144929.24  
+2          878099.03    123780.22  
+3         1244082.37    257032.07  
+4          915561.50    257032.07  
+2026-05-02 15:33:40,644 - INFO - Starting data cleaning...
+2026-05-02 15:33:40,666 - INFO - Data cleaning completed successfully.
+2026-05-02 15:33:40,675 - INFO - Cleaned Data Sample:
+   VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  GrossProfit  ProfitMargin  StockTurnover  \
+0         1033056.96     68601.68  -2778194.64   -268.929473       0.197849   
+1          796658.12    144929.24  -3007383.10   -377.499836       0.160865   
+2          878099.03    123780.22  -2540204.65   -289.284530       0.185676   
+3         1244082.37    257032.07  -2017115.57   -162.136818       0.276986   
+4          915561.50    257032.07  -2107644.51   -230.202396       0.216134   
+
+   SalesToPurchaseRatio  
+0              0.271055  
+1              0.209424  
+2              0.256882  
+3              0.381480  
+4              0.302845  
+2026-05-02 15:33:45,839 - INFO - vendor_sales_summary uploaded successfully
+2026-05-02 15:33:45,839 - INFO - Data successfully ingested into MySQL table.
+2026-05-02 15:33:45,840 - INFO - Database connection closed.
+2026-05-02 15:33:45,840 - INFO - ----- PIPELINE COMPLETED SUCCESSFULLY -----
+2026-05-02 15:55:48,176 - INFO - ----- PIPELINE STARTED -----
+2026-05-02 15:55:48,202 - INFO - Database connection established successfully.
+2026-05-02 15:55:48,202 - INFO - Executing vendor summary query...
+2026-05-02 15:56:42,551 - INFO - Query executed successfully. Rows fetched: 10692
+2026-05-02 15:56:42,558 - INFO - Sample Data:
+   VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  
+0         1033056.96     68601.68  
+1          796658.12    144929.24  
+2          878099.03    123780.22  
+3         1244082.37    257032.07  
+4          915561.50    257032.07  
+2026-05-02 15:56:42,558 - INFO - Starting data cleaning...
+2026-05-02 15:56:42,589 - INFO - Data cleaning completed successfully.
+2026-05-02 15:56:42,598 - INFO - Cleaned Data Sample:
+   VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0               145080.0            3811251.60             28704.0   
+1               164038.0            3804041.22             26388.0   
+2               187407.0            3418303.68             34797.0   
+3               201682.0            3261197.94             55863.0   
+4               138109.0            3023206.01             29850.0   
+
+   TotalSalesDollars  FreightCost  GrossProfit  ProfitMargin  StockTurnover  \
+0         1033056.96     68601.68  -2778194.64   -268.929473       0.197849   
+1          796658.12    144929.24  -3007383.10   -377.499836       0.160865   
+2          878099.03    123780.22  -2540204.65   -289.284530       0.185676   
+3         1244082.37    257032.07  -2017115.57   -162.136818       0.276986   
+4          915561.50    257032.07  -2107644.51   -230.202396       0.216134   
+
+   SalesToPurchaseRatio  
+0              0.271055  
+1              0.209424  
+2              0.256882  
+3              0.381480  
+4              0.302845  
+2026-05-02 15:56:48,032 - INFO - vendor_sales_summary uploaded successfully
+2026-05-02 15:56:48,032 - INFO - Data successfully ingested into MySQL table.
+2026-05-02 15:56:48,033 - INFO - Database connection closed.
+2026-05-02 15:56:48,033 - INFO - ----- PIPELINE COMPLETED SUCCESSFULLY -----

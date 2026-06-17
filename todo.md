@@ -1,0 +1,1 @@
+create a .gitingnore file and add the data folder and all its file inside this 
